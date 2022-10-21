@@ -1,0 +1,318 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.9f1 (ad3870b89536) revision 11352176'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22000) 64bit Professional' Language: 'pt' Physical Memory: 16253 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.3.9f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+E:/HighLevel/HighLevel
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+62241
+Successfully changed project path to: E:/HighLevel/HighLevel
+E:/HighLevel/HighLevel
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 74.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.9f1 (ad3870b89536)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/HighLevel/HighLevel/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 (ID=0x1f82)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   31.0.15.1659
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56112
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.9f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
+Registered in 0.004512 seconds.
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 94.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.576 seconds
+Domain Reload Profiling:
+	ReloadAssembly (576ms)
+		BeginReloadAssembly (60ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (422ms)
+			LoadAssemblies (59ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (92ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (259ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (36ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (95ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (91ms)
+				ProcessInitializeOnLoadMethodAttributes (36ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002656 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image E:\HighLevel\HighLevel\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image E:\HighLevel\HighLevel\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.57 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.885 seconds
+Domain Reload Profiling:
+	ReloadAssembly (886ms)
+		BeginReloadAssembly (85ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (16ms)
+		EndReloadAssembly (699ms)
+			LoadAssemblies (60ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (234ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (47ms)
+			SetupLoadedEditorAssemblies (325ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (214ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 0.67 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3555 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 40 unused Assets / (182.3 KB). Loaded Objects now: 4030.
+Memory consumption went from 136.7 MB to 136.6 MB.
+Total: 3.244400 ms (FindLiveObjects: 0.307000 ms CreateObjectMapping: 0.238800 ms MarkObjects: 2.586400 ms  DeleteObjects: 0.111100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 819830.879268 seconds.
+  path: Assets/Cartoon Heroes/Male/Textures
+  artifactKey: Guid(b5c7f5676e98aad4c92d767616d599fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/Textures using Guid(b5c7f5676e98aad4c92d767616d599fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69b64c30259b3a62c37f0b78293d8f9c') in 0.019371 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Cartoon Heroes/Male
+  artifactKey: Guid(8b9b6e637e73c5341beaea90346b0718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male using Guid(8b9b6e637e73c5341beaea90346b0718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbccde4bf756c176ced2982be3089a2c') in 0.005003 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.135657 seconds.
+  path: Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_1/Male_Torso_1_Green.tga
+  artifactKey: Guid(adaf6facc05fabc47bc7a3340e9b5c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_1/Male_Torso_1_Green.tga using Guid(adaf6facc05fabc47bc7a3340e9b5c7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d1c7cc9a404371b2f6db51458c8342c') in 0.130051 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_1/Male_Torso_1_Skin.tga
+  artifactKey: Guid(da4ecba8a5f9f0a46bc026657126cc9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_1/Male_Torso_1_Skin.tga using Guid(da4ecba8a5f9f0a46bc026657126cc9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ed36b481c594530c2c868ab6d20e2f6') in 0.137313 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_1/Male_Torso_1_Normals.tga
+  artifactKey: Guid(28cb9d7c7f5470d4d98b38102298557e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_1/Male_Torso_1_Normals.tga using Guid(28cb9d7c7f5470d4d98b38102298557e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e8e4ccadf75c314a307cbd1c01159be') in 0.113948 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 72.827486 seconds.
+  path: Assets/Cartoon Heroes/Male/Textures/Legs/Legs_1/Male_Legs_1_Brown.tga
+  artifactKey: Guid(a3ccca445118bcf4d81429c3b83ed0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/Textures/Legs/Legs_1/Male_Legs_1_Brown.tga using Guid(a3ccca445118bcf4d81429c3b83ed0e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a7e0e44923d6b779b0875a46a80a3a1') in 0.108564 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 94.190809 seconds.
+  path: Assets/Cartoon Heroes/Male/Textures/Heads/Head_2/Male_Head_2_Normals.tga
+  artifactKey: Guid(9d6477c809bef7d40a5970fdcf75678e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/Textures/Heads/Head_2/Male_Head_2_Normals.tga using Guid(9d6477c809bef7d40a5970fdcf75678e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7034f04eb9a79c08a3b5a7fcb5f7e0dd') in 0.009943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 165.874658 seconds.
+  path: Assets/Cartoon Heroes/Character Prefabs/Male/Male B.prefab
+  artifactKey: Guid(f933c455b886ad644b60dc415ab31bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Character Prefabs/Male/Male B.prefab using Guid(f933c455b886ad644b60dc415ab31bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4194eaed891686ab25dd6b719bc50660') in 2.980925 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Cartoon Heroes/Character Prefabs/Male/Male C.prefab
+  artifactKey: Guid(60e8218091f83244c9bf9c8c2569a009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Character Prefabs/Male/Male C.prefab using Guid(60e8218091f83244c9bf9c8c2569a009) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bff94487d29158bb16040c39442041ec') in 0.309810 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 107.091970 seconds.
+  path: Assets/Cartoon Heroes/Male/3D/Heads/Head_4/Male_Head_Hero.FBX
+  artifactKey: Guid(87b96f0f4fd1a9d40b88de82ed3ee28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/3D/Heads/Head_4/Male_Head_Hero.FBX using Guid(87b96f0f4fd1a9d40b88de82ed3ee28d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b152b477a86282b9fecda7b53334f2fc') in 0.093939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.193989 seconds.
+  path: Assets/Cartoon Heroes/Male/3D/Heads/Head_4/Materials/Male_Head_Hero.mat
+  artifactKey: Guid(312107d52a59114408b41577688abafe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/3D/Heads/Head_4/Materials/Male_Head_Hero.mat using Guid(312107d52a59114408b41577688abafe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86714624694227801c6a7702ec2227d6') in 0.024462 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 113.301759 seconds.
+  path: Assets/Cartoon Heroes/Male/3D/Torsos/Torso_4/Materials/Male_Torso_1_Green.mat
+  artifactKey: Guid(8a75912319160b941b22c2bdca13613d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/3D/Torsos/Torso_4/Materials/Male_Torso_1_Green.mat using Guid(8a75912319160b941b22c2bdca13613d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23b60fc6c94985bc94ece77e4983287d') in 0.025949 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Cartoon Heroes/Male/3D/Torsos/Torso_4/Materials/Male_Torso_1_Yellow.mat
+  artifactKey: Guid(4bd6312493f76574886555078e47427a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/3D/Torsos/Torso_4/Materials/Male_Torso_1_Yellow.mat using Guid(4bd6312493f76574886555078e47427a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6cd51806e5e8823365d524a96a9d380') in 0.015435 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Cartoon Heroes/Male/3D/Torsos/Torso_4/Materials/Male_Torso_1_Skin.mat
+  artifactKey: Guid(3c866af2d02ef1d4da86579f6f995319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/3D/Torsos/Torso_4/Materials/Male_Torso_1_Skin.mat using Guid(3c866af2d02ef1d4da86579f6f995319) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bf07286c784a7a3445fbace8bc4e94e') in 0.011006 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 33.850738 seconds.
+  path: Assets/Cartoon Heroes/Male/Textures/Torsos/Base Torso/Male_Base_Torso_Normals.tga
+  artifactKey: Guid(20a55e4c9682ced43bf2d76058502af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/Textures/Torsos/Base Torso/Male_Base_Torso_Normals.tga using Guid(20a55e4c9682ced43bf2d76058502af8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '824fe0535ef1be9a2af85e4150fb1c7b') in 0.012770 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.397754 seconds.
+  path: Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_2/Male_Torso_2_Green.tga
+  artifactKey: Guid(918a174401a5e4f41ac48b30dd0b9d40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_2/Male_Torso_2_Green.tga using Guid(918a174401a5e4f41ac48b30dd0b9d40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a3c9956326819d44a362a6506570d6') in 0.011685 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_2/Male_Torso_2_Skin.tga
+  artifactKey: Guid(95fcda66108d0fa4c934063a058575ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_2/Male_Torso_2_Skin.tga using Guid(95fcda66108d0fa4c934063a058575ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a369342f3cf756db5fba209d105cf0bf') in 0.011118 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_2/Male_Torso_2_Normals.tga
+  artifactKey: Guid(1e699ba40e1cc3540ba19871d027475e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_2/Male_Torso_2_Normals.tga using Guid(1e699ba40e1cc3540ba19871d027475e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '823dfe9e36ca63b449cb62e04db1f854') in 0.009926 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_2/Male_Torso_2_Red.tga
+  artifactKey: Guid(d654236078cd2f947909596d46cec4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_2/Male_Torso_2_Red.tga using Guid(d654236078cd2f947909596d46cec4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11a2580f8136bd3bb5aa184cfe5455ce') in 0.098108 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.034940 seconds.
+  path: Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_3/Male_Torso_3_Green.tga
+  artifactKey: Guid(e714bb7b53f95d9439a31c42b8165271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_3/Male_Torso_3_Green.tga using Guid(e714bb7b53f95d9439a31c42b8165271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72be2e02499f8d0673a151044b3c6abe') in 0.029373 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_3/Male_Torso_3_Normals.tga
+  artifactKey: Guid(bbb551d3f2b654042b680962e551ea19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_3/Male_Torso_3_Normals.tga using Guid(bbb551d3f2b654042b680962e551ea19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b224d133c0cd48d200ff23814d4219a7') in 0.011937 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_3/Male_Torso_3_Skin.tga
+  artifactKey: Guid(9c939e5100b9c0041bac3454eeedf307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_3/Male_Torso_3_Skin.tga using Guid(9c939e5100b9c0041bac3454eeedf307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd33f094c61f483a13987798891133c8d') in 0.031177 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_3/Male_Torso_3_Yellow.tga
+  artifactKey: Guid(47fdd8c7547eb5749ad4cbc84a681b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Male/Textures/Torsos/Torso_3/Male_Torso_3_Yellow.tga using Guid(47fdd8c7547eb5749ad4cbc84a681b71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83aa7d4441dd99c84f28185f05ba9e60') in 0.023606 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 133.505069 seconds.
+  path: Assets/Cartoon Heroes/Character Prefabs/Female/Female B.prefab
+  artifactKey: Guid(a367f32b0351f2648a0e15f3444c6f86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Character Prefabs/Female/Female B.prefab using Guid(a367f32b0351f2648a0e15f3444c6f86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd220a4b319c08d8486247a288e81655c') in 3.220107 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Cartoon Heroes/Character Prefabs/Female/Female C.prefab
+  artifactKey: Guid(de2a7efe044817e43b49fa819dea7499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Cartoon Heroes/Character Prefabs/Female/Female C.prefab using Guid(de2a7efe044817e43b49fa819dea7499) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f92cab0e6ca682f0ca23eacb6dd8808b') in 0.419862 seconds 
