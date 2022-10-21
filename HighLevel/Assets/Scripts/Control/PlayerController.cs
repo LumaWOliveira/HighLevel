@@ -5,24 +5,51 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+using UnityEngine.InputSystem;
 
 namespace RPG.Control
 {
     public class PlayerController : MonoBehaviour
     {
         private Health health;
-        public CharacterController controller;
         public Camera cam;
 
+        /*
         public float velocity = 1f;
         public float turnTime = 0.1f;
         private float angle, targetAngle, turnSmoothVelocity;
+        */
+
+        [SerializeField] private InputActionAsset inputActions;
+        private InputActionMap playerActionMap;
+        private InputAction movement;
+        private Vector3 movementVector;
+        private NavMeshAgent navMeshAgent;
+        private void Awake()
+        {
+            navMeshAgent = GetComponent<NavMeshAgent>();
+            playerActionMap = inputActions.FindActionMap("Player");
+            movement = playerActionMap.FindAction("Move");
+            movement.started += HandleMovementAction;
+            movement.canceled += HandleMovementAction;
+            movement.performed += HandleMovementAction;
+            movement.Enable();
+            playerActionMap.Enable();
+            inputActions.Enable();
+        }
+
+        private void HandleMovementAction(InputAction.CallbackContext context)
+        {
+            Vector2 input = context.ReadValue<Vector2>();
+            movementVector = new Vector3(input.x, 0, input.y);
+            navMeshAgent.velocity = movementVector;
+        }
 
         private void Start()
         {
             health = GetComponent<Health>();
             cam = Camera.main;
-            controller = GetComponent<CharacterController>();
         }
 
         void Update()
@@ -34,31 +61,49 @@ namespace RPG.Control
             if (InteractWithMovement()) return;
         }
 
-        /*
+        private bool InteractWithMovement()
+        {
+            if (!movement.IsInProgress()) return false;
+
+            GetComponent<Mover>().StartMoveAction(movementVector, 1f, 0);
+            return true;
+        }
+
+        /* BACKUP
         private bool InteractWithMovement()
         {
             float horizontal = Input.GetAxisRaw("Horizontal");
             float vertical = Input.GetAxisRaw("Vertical");
 
-            Vector3 direction = new Vector3(horizontal, 0f, vertical).normalized;
+            Vector3 move = transform.right * horizontal + transform.forward * vertical;
 
-            if (direction.magnitude >= 0.1f)
+            if ((Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)))
             {
-                
-                targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.transform.eulerAngles.y;
-                angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref turnSmoothVelocity, turnTime);
-                transform.rotation = Quaternion.Euler(0f, angle, 0f);
-                
-                direction = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
-                controller.Move(direction.normalized * Time.deltaTime * velocity);
-                GetComponent<Mover>().StartMoveAction(direction.normalized, 1f);
+                return false;
+            }
+
+            if (move.magnitude >= 0.1f)
+            {
+                controller.Move(move * velocity * Time.deltaTime);
+                GetComponent<Mover>().StartMoveAction(move + transform.position, 1f);
                 return true;
             }
-            else return false;
+
+            return false;
+
         }
         */
+        private bool InteractWithCombat()
+        {
+            if (Input.GetMouseButton(0))
+            {
 
-        
+                // GetComponent<PFighter>().Attack(target.gameObject, 1f); //full speed for the player move when attack
+                return true;
+            }
+            return false;
+        }
+        /*
         private bool InteractWithCombat()
         {
             RaycastHit[] hits = Physics.RaycastAll(GetMouseRay());
@@ -78,27 +123,13 @@ namespace RPG.Control
 
             return false;
         }
-
-        private bool InteractWithMovement()
-        {
-            RaycastHit hit;
-            bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
-            if (hasHit)
-            {
-                if (Input.GetMouseButton(0))
-                {
-                    GetComponent<Mover>().StartMoveAction(hit.point,1f); //full speed for the player move
-                }
-                return true;   
-            }
-            return false;
-        }
+        */
 
         private static Ray GetMouseRay()
         {
             return Camera.main.ScreenPointToRay(Input.mousePosition);
         }
-        
+
 
 
     }
