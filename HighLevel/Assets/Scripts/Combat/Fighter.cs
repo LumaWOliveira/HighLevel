@@ -2,6 +2,7 @@ using RPG.Core;
 using RPG.Movement;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
 
 namespace RPG.Combat
@@ -54,6 +55,7 @@ namespace RPG.Combat
         //Animation Event
         void Hit()
         {
+            //print("acertou");
             if (target == null) return;
 
             target.TakeDamage(weaponDamage);
