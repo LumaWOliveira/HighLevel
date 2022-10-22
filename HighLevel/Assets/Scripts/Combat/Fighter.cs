@@ -2,7 +2,6 @@ using RPG.Core;
 using RPG.Movement;
 using System.Collections;
 using System.Collections.Generic;
-using System.Diagnostics;
 using UnityEngine;
 
 namespace RPG.Combat
@@ -22,7 +21,7 @@ namespace RPG.Combat
             timeSinceLastAttack += Time.deltaTime;
 
             if (target == null) return;
-            if (target.IsDead()) return;
+            if (target == null && target.IsDead()) return;
 
             if (!GetIsInRange())
             {
@@ -38,7 +37,7 @@ namespace RPG.Combat
         private void AttackBehaviour()
         {
             transform.LookAt(target.transform);
-            if(timeSinceLastAttack > timeBetweenAttacks)
+            if (timeSinceLastAttack > timeBetweenAttacks)
             {
                 TriggerAttack();
                 timeSinceLastAttack = 0;
@@ -55,7 +54,6 @@ namespace RPG.Combat
         //Animation Event
         void Hit()
         {
-            //print("acertou");
             if (target == null) return;
 
             target.TakeDamage(weaponDamage);

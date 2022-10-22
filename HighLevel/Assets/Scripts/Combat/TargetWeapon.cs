@@ -4,13 +4,24 @@ using UnityEngine;
 
 public class TargetWeapon : MonoBehaviour
 {
-    private GameObject OnTriggerEnter(Collider target)
+    public GameObject enemy;
+
+    private void Awake()
+    {
+        enemy = null;
+    }
+
+    private void OnTriggerEnter(Collider target)
     {
         if (target.gameObject.CompareTag("Enemy"))
         {
-            print("Hit");
-            return target.gameObject;
+            enemy = target.gameObject;
         }
-        else return null;
+
+    }
+
+    private void OnTriggerExit(Collider target)
+    {
+        enemy = null;
     }
 }
