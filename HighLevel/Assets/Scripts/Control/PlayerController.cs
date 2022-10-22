@@ -14,7 +14,7 @@ namespace RPG.Control
     {
         private Health health;
         public Camera cam;
-
+        private TargetWeapon target;
         /*
         public float velocity = 1f;
         public float turnTime = 0.1f;
@@ -28,6 +28,8 @@ namespace RPG.Control
         private NavMeshAgent navMeshAgent;
         private void Awake()
         {
+            //target = GetComponent<TargetWeapon>();
+            target = FindObjectOfType<TargetWeapon>();
             navMeshAgent = GetComponent<NavMeshAgent>();
             playerActionMap = inputActions.FindActionMap("Player");
             movement = playerActionMap.FindAction("Move");
@@ -95,10 +97,9 @@ namespace RPG.Control
         */
         private bool InteractWithCombat()
         {
-            if (Input.GetMouseButton(0))
+            if (Input.GetKey(KeyCode.J))
             {
-
-                // GetComponent<PFighter>().Attack(target.gameObject, 1f); //full speed for the player move when attack
+                GetComponent<Fighter>().Attack(target.gameObject, 1f); //full speed for the player move when attack
                 return true;
             }
             return false;
@@ -118,6 +119,7 @@ namespace RPG.Control
                 {
                     GetComponent<Fighter>().Attack(target.gameObject, 1f); //full speed for the player move when attack
                 }
+
                 return true;
             }
 
