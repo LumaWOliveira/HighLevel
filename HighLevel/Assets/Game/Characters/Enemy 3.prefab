@@ -15,6 +15,10 @@ PrefabInstance:
       propertyPath: healthPoints
       value: 40
       objectReference: {fileID: 0}
+    - target: {fileID: 295284850230850967, guid: cb0e28fb3d5ed4d47a429117a6768b8b, type: 3}
+      propertyPath: maxHealthPoints
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 1622173288032461968, guid: cb0e28fb3d5ed4d47a429117a6768b8b, type: 3}
       propertyPath: m_Name
       value: Enemy 3
